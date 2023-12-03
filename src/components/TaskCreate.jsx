@@ -27,7 +27,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
       {' '}
       {taskformUpdate ? (
         <div className="task-update">
-          <h3>Lütfen Taskı Düzenleyiniz!</h3>
+          <h3>Lütfen Metni Düzenleyiniz!</h3>
           <form className="task-form">
             <label className="task-label">Başlığı Düzenleyiniz</label>
             <input
@@ -35,7 +35,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
               onChange={handleChange}
               className="task-input"
             />
-            <label className="task-label">Taskı Düzenleyiniz!</label>
+            <label className="task-label">Metni Düzenleyiniz!</label>
             <textarea
               value={taskDesc}
               onChange={handleTaskChange}
@@ -52,7 +52,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
         </div>
       ) : (
         <div className="task-create">
-          <h3>Lütfen Task Ekleyiniz!</h3>
+          <h3>Lütfen Metin Ekleyiniz!</h3>
           <form className="task-form">
             <label className="task-label">Başlık</label>
             <input
@@ -60,7 +60,7 @@ function TaskCreate({ onCreate, task, taskformUpdate, onUpdate }) {
               onChange={handleChange}
               className="task-input"
             />
-            <label className="task-label">Task Giriniz!</label>
+            <label className="task-label">Metin Giriniz!</label>
             <textarea
               value={taskDesc}
               onChange={handleTaskChange}
